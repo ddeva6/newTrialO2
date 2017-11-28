@@ -43,7 +43,7 @@ public class basePage {
 		try {
 			wait4.until(ExpectedConditions.visibilityOf(element));
 			flag=true;
-			testLog.log(LogStatus.PASS, "Element is visible"+element.toString());
+			testLog.log(LogStatus.PASS, "Element is visible "+element.toString());
 		}
 		catch (Exception e) {
 			testLog.log(LogStatus.FAIL, "Elementis not visible");
@@ -59,7 +59,7 @@ public class basePage {
 			flag=true;
 			act.moveToElement(element).build().perform();
 			element.click();
-			testLog.log(LogStatus.PASS, "Element is clicked"+element.toString());
+			testLog.log(LogStatus.PASS, "Element is clicked "+element.toString());
 		}
 		return flag;
 	}
@@ -70,7 +70,7 @@ public class basePage {
 			element.clear();
 			element.sendKeys(Data);
 			flag = true;
-			testLog.log(LogStatus.PASS, Data + "Data snt to element"+element.toString());
+			testLog.log(LogStatus.PASS, Data + "Data snt to element "+element.toString());
 		}
 		return flag;	
 	}
@@ -78,7 +78,7 @@ public class basePage {
 	public void IdleWait(String TimeInSeconds)	{
 		try {
 			Thread.sleep(1000*Integer.parseUnsignedInt(TimeInSeconds));
-			testLog.log(LogStatus.INFO, "idle wait for"+Integer.parseUnsignedInt(TimeInSeconds));
+			testLog.log(LogStatus.INFO, "idle wait for "+Integer.parseUnsignedInt(TimeInSeconds));
 		}
 		catch (Exception e) {
 			testLog.log(LogStatus.ERROR, e);
@@ -93,7 +93,7 @@ public class basePage {
 			
 			Long loadtime = (Long)js.executeScript(
 				    "return performance.timing.loadEventEnd - performance.timing.navigationStart;");
-			testLog.log(LogStatus.INFO," page loaded in "+loadtime+" millisecond");
+			testLog.log(LogStatus.INFO,"page loaded in "+loadtime+" millisecond");
 				if(Title.equalsIgnoreCase(Title)) {
 					testLog.log(LogStatus.INFO, "page looded successfully"+URL+"title"+Title);
 					flag = true;
@@ -135,7 +135,7 @@ public class basePage {
 			    }while(js.executeScript("return document.readyState").equals("complete"));
 			long stop = System.currentTimeMillis();
 			flag = true;
-			testLog.log(LogStatus.PASS, "page loading completed in"+(stop-start));
+			testLog.log(LogStatus.PASS, "page loading completed in "+(stop-start)+" ms");
 		    }
 			catch (Exception e) {
 				testLog.log(LogStatus.FAIL, "Page is not get loaded");
