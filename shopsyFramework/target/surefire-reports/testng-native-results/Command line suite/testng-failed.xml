@@ -8,6 +8,7 @@
           <include name="termination"/>
           <include name="config"/>
           <include name="samplerun"/>
+          <include name="attachScreenshot"/>
           <include name="finish"/>
           <include name="initialize"/>
         </methods>
