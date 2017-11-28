@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="29505" started-at="2017-11-27T19:48:57Z" finished-at="2017-11-27T19:49:26Z">
+  <suite name="Command line suite" duration-ms="45988" started-at="2017-11-28T21:45:49Z" finished-at="2017-11-28T21:46:35Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="29505" started-at="2017-11-27T19:48:57Z" finished-at="2017-11-27T19:49:26Z">
+    <test name="Command line test" duration-ms="45988" started-at="2017-11-28T21:45:49Z" finished-at="2017-11-28T21:46:35Z">
       <class name="com.org.dapps.shopsyFramework.toTest">
-        <test-method status="PASS" signature="config()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@3f2a3a5]" name="config" is-config="true" duration-ms="231" started-at="2017-11-28T01:18:57Z" finished-at="2017-11-28T01:18:57Z">
+        <test-method status="PASS" signature="config()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@4cb2c100]" name="config" is-config="true" duration-ms="262" started-at="2017-11-29T03:15:49Z" finished-at="2017-11-29T03:15:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- config -->
-        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:com.org.dapps.shopsyFramework.toTest@3f2a3a5]" name="initialize" is-config="true" duration-ms="8353" started-at="2017-11-28T01:18:57Z" finished-at="2017-11-28T01:19:05Z">
+        <test-method status="PASS" signature="initialize(java.lang.String)[pri:0, instance:com.org.dapps.shopsyFramework.toTest@4cb2c100]" name="initialize" is-config="true" duration-ms="21249" started-at="2017-11-29T03:15:49Z" finished-at="2017-11-29T03:16:10Z">
           <params>
             <param index="0">
               <value>
@@ -22,15 +22,26 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initialize -->
-        <test-method status="PASS" signature="samplerun()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@3f2a3a5]" name="samplerun" duration-ms="19323" started-at="2017-11-28T01:19:05Z" finished-at="2017-11-28T01:19:25Z">
+        <test-method status="PASS" signature="samplerun()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@4cb2c100]" name="samplerun" duration-ms="23870" started-at="2017-11-29T03:16:10Z" finished-at="2017-11-29T03:16:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- samplerun -->
-        <test-method status="PASS" signature="termination()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@3f2a3a5]" name="termination" is-config="true" duration-ms="1800" started-at="2017-11-28T01:19:25Z" finished-at="2017-11-28T01:19:26Z">
+        <test-method status="PASS" signature="attachScreenshot(org.testng.ITestResult)[pri:0, instance:com.org.dapps.shopsyFramework.toTest@4cb2c100]" name="attachScreenshot" is-config="true" duration-ms="0" started-at="2017-11-29T03:16:34Z" finished-at="2017-11-29T03:16:34Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=samplerun status=SUCCESS method=toTest.samplerun()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@4cb2c100] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- attachScreenshot -->
+        <test-method status="PASS" signature="termination()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@4cb2c100]" name="termination" is-config="true" duration-ms="806" started-at="2017-11-29T03:16:34Z" finished-at="2017-11-29T03:16:35Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- termination -->
-        <test-method status="PASS" signature="finish()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@3f2a3a5]" name="finish" is-config="true" duration-ms="675" started-at="2017-11-28T01:19:26Z" finished-at="2017-11-28T01:19:27Z">
+        <test-method status="PASS" signature="finish()[pri:0, instance:com.org.dapps.shopsyFramework.toTest@4cb2c100]" name="finish" is-config="true" duration-ms="993" started-at="2017-11-29T03:16:36Z" finished-at="2017-11-29T03:16:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- finish -->

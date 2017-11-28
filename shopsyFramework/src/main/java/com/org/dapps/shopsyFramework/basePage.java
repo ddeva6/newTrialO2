@@ -1,14 +1,9 @@
 package com.org.dapps.shopsyFramework;
 
-import java.io.File;
-import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.JavascriptExecutor;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
@@ -145,21 +140,6 @@ public class basePage {
 				
 		}
 	
-	public String ScreenShot() {
-		
-		TakesScreenshot screen = (TakesScreenshot)driver;
-		File src = screen.getScreenshotAs(OutputType.FILE);
-		String screenLocation = System.getProperty("user.dir")+"/screenShots"+src+new SimpleDateFormat("yyMMddhhmmss").format(new Date())+".jpeg";
-		File dest = new File(screenLocation);
-		try {
-			FileUtils.copyFile(src, dest);
-			testLog.log(LogStatus.PASS, "screen shot captured and saved in "+screenLocation);
-		} catch (IOException e) {
-			testLog.log(LogStatus.ERROR, "screen is not saved");
-			testLog.log(LogStatus.INFO, e);
-		}
-		return screenLocation;
-		}
 	
 	public boolean scroll(String data) {
 		boolean flag = true;

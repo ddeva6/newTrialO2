@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="11" started-at="2017-11-27T19:49:27Z" finished-at="2017-11-27T19:49:27Z">
+  <suite name="Command line suite" duration-ms="37" started-at="2017-11-28T21:46:38Z" finished-at="2017-11-28T21:46:38Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="11" started-at="2017-11-27T19:49:27Z" finished-at="2017-11-27T19:49:27Z">
+    <test name="Command line test" duration-ms="37" started-at="2017-11-28T21:46:38Z" finished-at="2017-11-28T21:46:38Z">
       <class name="com.org.dapps.shopsyFramework.AppTest">
-        <test-method status="PASS" signature="testApp()[pri:0, instance:testApp(com.org.dapps.shopsyFramework.AppTest)]" name="testApp" duration-ms="1" started-at="2017-11-28T01:19:27Z" finished-at="2017-11-28T01:19:27Z">
+        <test-method status="PASS" signature="testApp()[pri:0, instance:testApp(com.org.dapps.shopsyFramework.AppTest)]" name="testApp" duration-ms="3" started-at="2017-11-29T03:16:38Z" finished-at="2017-11-29T03:16:38Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testApp -->

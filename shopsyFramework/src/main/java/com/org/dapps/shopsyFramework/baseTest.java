@@ -9,6 +9,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.opera.OperaDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeSuite;
@@ -18,7 +20,7 @@ import org.testng.annotations.Parameters;
 
 import com.relevantcodes.extentreports.ExtentReports;
 import com.relevantcodes.extentreports.ExtentTest;
-
+import com.relevantcodes.extentreports.LogStatus;
 import pages.homeAfterLogin;
 import pages.homePage;
 
@@ -66,6 +68,23 @@ public class baseTest{
 		driver.navigate().refresh();
 		testLog = report.startTest("Shopsy");
 		this.homeObj = new homePage(driver,testLog);
+	}
+	
+	@AfterMethod
+	public void attachScreenshot(ITestResult result) {
+		if((result.getStatus()==ITestResult.FAILURE)) {
+			testLog.log(LogStatus.FAIL, "test failed "+result.getName());
+			testLog.log(LogStatus.INFO, "Details "+result.getThrowable());
+			try {
+			String screenPath = screenShot.capture(driver);
+			testLog.log(LogStatus.FAIL, testLog.addBase64ScreenShot(screenPath));
+			}
+			catch (Exception e) {
+				testLog.log(LogStatus.ERROR, "unable to take screenShot");
+				testLog.log(LogStatus.INFO, e);
+			}
+			}
+		
 	}
 	
 	@AfterTest
