@@ -60,12 +60,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.org.dapps.tinAuto"/>
 			<item value="com.org.dapps.shopsyFramework"/>
 		</list>
 		<list key="groupId">
 			<item value="com.org.dapps"/>
 		</list>
 		<list key="artifactId">
+			<item value="tinAuto"/>
 			<item value="shopsyFramework"/>
 		</list>
 		<list key="projectNameTemplate">

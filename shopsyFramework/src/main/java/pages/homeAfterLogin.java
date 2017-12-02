@@ -16,6 +16,9 @@ public class homeAfterLogin extends basePage{
 	
 	@FindBy(xpath="//*[@id='you1']")
 	WebElement profileIcon;
+	@FindBy(xpath="//*[text()='View Profile']")
+	WebElement viewprofile;
+	
 
 	public homeAfterLogin (WebDriver Driver, ExtentTest TestLog) {
 		super(Driver,TestLog);
@@ -28,6 +31,12 @@ public class homeAfterLogin extends basePage{
 		Assert.assertEquals(elementVisiblity(profileIcon), true);
 		return new homeAfterLogin(driver, testLog);
 		
+	}
+	
+	public profilePage clickViewProfile() {
+		Assert.assertEquals(elementClick(profileIcon), true);
+		Assert.assertEquals(overAndClick(viewprofile), true);
+		return new profilePage(driver, testLog);
 	}
 	
 	

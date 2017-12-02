@@ -23,6 +23,7 @@ import com.relevantcodes.extentreports.ExtentTest;
 import com.relevantcodes.extentreports.LogStatus;
 import pages.homeAfterLogin;
 import pages.homePage;
+import pages.profilePage;
 
 public class baseTest{
 	
@@ -31,6 +32,7 @@ public class baseTest{
 	ExtentTest testLog;
 	homePage homeObj;
 	homeAfterLogin homeAfterLoginObj;
+	profilePage profilePageObj;
 		
 	@BeforeSuite
 	public void config(){
@@ -70,7 +72,7 @@ public class baseTest{
 		this.homeObj = new homePage(driver,testLog);
 	}
 	
-	@AfterMethod
+@AfterMethod
 	public void attachScreenshot(ITestResult result) {
 		if((result.getStatus()==ITestResult.FAILURE)) {
 			testLog.log(LogStatus.FAIL, "test failed "+result.getName());

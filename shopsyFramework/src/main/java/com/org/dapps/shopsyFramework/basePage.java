@@ -42,7 +42,7 @@ public class basePage {
 		}
 		catch (Exception e) {
 			testLog.log(LogStatus.FAIL, "Elementis not visible");
-			testLog.log(LogStatus.INFO, e);
+			testLog.log(LogStatus.ERROR, e);
 		}
 		return flag;
 	}
@@ -96,7 +96,7 @@ public class basePage {
 		}
 		catch (Exception e) {
 			testLog.log(LogStatus.FAIL, "page is not looded");
-			testLog.log(LogStatus.INFO, e);
+			testLog.log(LogStatus.ERROR, e);
 			
 		}
 		return flag;
@@ -114,7 +114,7 @@ public class basePage {
 		}
 		catch (Exception e) {
 			testLog.log(LogStatus.FAIL, "unable to select dropdown");
-			testLog.log(LogStatus.INFO, e);
+			testLog.log(LogStatus.ERROR, e);
 		}
 		return flag;
 		
@@ -166,6 +166,38 @@ public class basePage {
 	public String email(String Data) {
 		String email = Data+"@yopmail.com";
 		return email;
+	}
+	
+	public boolean overAndClick(WebElement element) {
+		boolean flag = false;
+		try {
+			if(elementVisiblity(element)) {
+//			Actions act = new Actions(driver);
+			act.moveToElement(element).click().build().perform();
+			testLog.log(LogStatus.PASS, "Element clicked"+element.toString());
+		}
+			flag=true;
+
+		}
+			catch (Exception e) {
+				testLog.log(LogStatus.FAIL, "mouse over and click element");
+				testLog.log(LogStatus.ERROR, e);	
+			}
+		return flag;
+	}
+	
+	public boolean executeXternalExe(String Data) {
+		boolean flag = false;
+		try {
+			Runtime.getRuntime().exec(Data);
+			testLog.log(LogStatus.PASS, "External exe executed on runtime");
+			flag=true;
+		}
+		catch (Exception e) {
+			testLog.log(LogStatus.FAIL, "file not found");
+			testLog.log(LogStatus.ERROR, e);
+		}
+		return flag;
 	}
 			
 		
