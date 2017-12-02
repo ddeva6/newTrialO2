@@ -67,11 +67,11 @@ public class testFoundation {
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		driver.navigate().refresh();
-		testLog = report.startTest("Shopsy");
+		testLog = report.startTest("tin");
 		this.homeObj = new tinHomePage(driver, testLog);
 	}
 	
-//@AfterMethod
+@AfterMethod
 	public void attachScreenshot(ITestResult result) {
 		if((result.getStatus()==ITestResult.FAILURE)) {
 			testLog.log(LogStatus.FAIL, "test failed "+result.getName());

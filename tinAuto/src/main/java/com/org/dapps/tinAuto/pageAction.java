@@ -35,8 +35,8 @@ public class pageAction {
 		boolean flag = false;
 		try {
 			wait4.until(ExpectedConditions.visibilityOf(element));
-			flag=true;
 			testLog.log(LogStatus.PASS, "Element is visible "+element.toString());
+			flag=true;
 		}
 		catch (Exception e) {
 			testLog.log(LogStatus.FAIL, "Elementis not visible");
@@ -49,14 +49,14 @@ public class pageAction {
 	public boolean elementClick(WebElement element) {
 		boolean flag = false;
 		if(elementVisiblity(element)) {			
-			flag=true;
-			act.moveToElement(element).build().perform();
-			element.click();
+			act.moveToElement(element).click().build().perform();
+//			element.click();
 			testLog.log(LogStatus.PASS, "Element is clicked "+element.toString());
+			flag=true;
 		}
 		return flag;
 	}
-	
+		
 	public boolean clickAndType(WebElement element, String Data) {
 		boolean flag = false;
 		if(elementClick(element)) {

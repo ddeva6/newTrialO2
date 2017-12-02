@@ -17,5 +17,7 @@ public class ePaymentPage extends pageAction{
 		this.testLog=TestLog;
 		PageFactory.initElements(driver, this);
 	}
+	
+	
 
 }

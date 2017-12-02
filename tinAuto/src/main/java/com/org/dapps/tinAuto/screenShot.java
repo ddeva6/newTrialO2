@@ -16,10 +16,9 @@ public static String capture(WebDriver Driver) throws IOException {
 		
 		TakesScreenshot screen = (TakesScreenshot)Driver;
 		File src = screen.getScreenshotAs(OutputType.FILE);
-		String screenLocation = ".\\screenShots\\"+src+new SimpleDateFormat("yyMMddhhmmss").format(new Date())+".jpeg";
+		String screenLocation = System.getProperty("user.dir")+"\\screenShots\\"+new SimpleDateFormat("yyMMddhhmmss").format(new Date())+".png";
 		File dest = new File(screenLocation);
 		FileUtils.copyFile(src, dest);
 		return screenLocation;
-
 		}
 }
