@@ -3466,3 +3466,8 @@ Caused by: org.codehaus.plexus.util.xml.pull.XmlPullParserException: Unrecognise
 2017-12-02 17:46:52,647 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Devakumar M\newTrialO2\tinAuto\src\main\resources
 2017-12-02 17:46:52,650 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2017-12-02 17:46:52,650 [Worker-77] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Devakumar M\newTrialO2\tinAuto\src\test\resources
+2017-12-02 17:47:32,715 [Worker-75] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.org.dapps:tinAuto:0.0.1-SNAPSHOT @ C:\Users\Devakumar M\newTrialO2\tinAuto\pom.xml.
+2017-12-02 17:47:34,237 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-02 17:47:34,238 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Devakumar M\newTrialO2\tinAuto\src\main\resources
+2017-12-02 17:47:34,240 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2017-12-02 17:47:34,240 [Worker-75] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Devakumar M\newTrialO2\tinAuto\src\test\resources
